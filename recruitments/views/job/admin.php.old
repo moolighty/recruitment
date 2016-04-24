@@ -1,0 +1,17 @@
+<?php
+
+use yii\grid\GridView;
+
+$this->title="职位管理";
+
+echo GridView::widget(
+    [
+        'dataProvider' => $dataProvider,
+        'columns' =>[
+            [
+                'class' =>'yii\grid\ActionColumn',
+                'header'=>'operations',
+            ]
+        ],
+    ]
+);
